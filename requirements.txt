@@ -1,0 +1,7 @@
+# Required packages for Raspberry Pi
+RPi.GPIO>=0.7.1
+smbus2>=0.4.2
+
+# Note: dfadc is provided by the DFRobot ADC hardware module
+# Make sure the DFRobot ADC module is properly connected to your Raspberry Pi
+# and its Python library is installed according to the manufacturer's instructions
