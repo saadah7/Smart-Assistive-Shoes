@@ -72,8 +72,31 @@ pip install RPi.GPIO smbus2
 4. **Run the script:**
 
 ```bash
-python3 smart_shoes.py
+python3 main.py
 ```
+
+5. **Run as a Service** (Optional):
+To automatically start the system on boot:
+```bash
+# Copy service file to systemd
+sudo cp smart-shoes.service /etc/systemd/system/
+# Reload systemd
+sudo systemctl daemon-reload
+# Enable the service
+sudo systemctl enable smart-shoes
+# Start the service
+sudo systemctl start smart-shoes
+# Check status
+sudo systemctl status smart-shoes
+```
+
+## 🔧 Development Mode
+
+The code includes mock implementations for non-Raspberry Pi development:
+- Automatically detects if running on Pi or other system
+- Uses mock GPIO, I2C, and ADC on non-Pi systems
+- Prints debug information instead of accessing hardware
+- Allows testing logic and UI flow without physical hardware
 
 ---
 
