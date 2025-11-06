@@ -1,7 +1,16 @@
-from dfadc import *
-import RPi.GPIO as GPIO
+import platform
 import time
-from smbus2 import SMBus
+
+# Use real hardware on Raspberry Pi, mock implementations elsewhere
+if platform.machine().startswith('arm'):
+    from dfadc import *
+    import RPi.GPIO as GPIO
+    from smbus2 import SMBus
+else:
+    print("Not running on Raspberry Pi - using mock implementations")
+    from mock_hardware import MockGPIO as GPIO
+    from mock_hardware import MockSMBus as SMBus
+    from mock_hardware import board, board_detect
 
 # === GPIO Pins ===
 VIBRATION_PIN = 17
