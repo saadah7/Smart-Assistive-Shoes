@@ -1,0 +1,14 @@
+[Unit]
+Description=Smart Assistive Shoes Service
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/Smart-Assistive-Shoes
+ExecStart=/usr/bin/python3 /home/pi/Smart-Assistive-Shoes/main.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
