@@ -102,7 +102,7 @@ The code includes mock implementations for non-Raspberry Pi development:
 
 ## 📷 Preview
 
-> *(Add images or videos of your setup, working prototype, circuit diagram, etc.)*
+> *GALLERY OF IMAGES*
 
 ---
 
