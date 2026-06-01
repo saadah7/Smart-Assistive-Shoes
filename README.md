@@ -1,4 +1,4 @@
-👟 Smart Assistive Shoes – Mini Project
+9i👟 Smart Assistive Shoes – Mini Project
 
 A Raspberry Pi-based **Smart Assistive Footwear System** designed to assist visually impaired individuals with obstacle detection. Using distance sensors, vibration motor, LEDs, sound alerts, and an LCD display, this shoe alerts users about nearby objects in real-time, improving safety and mobility.
 
@@ -117,4 +117,3 @@ The code includes mock implementations for non-Raspberry Pi development:
 ## 📜 License
 
 This project is for educational purposes. Feel free to fork and improve!
-saad
